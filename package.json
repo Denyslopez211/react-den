@@ -25,6 +25,11 @@
 		"format": "prettier --write .",
 		"lint": "eslint --fix . --ext .js,.tsx"
 	},
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier --write . && eslint --fix . --ext .js, .tsx, ts"
+    }
+  },
 	"eslintConfig": {
 		"extends": [
 			"react-app",
@@ -54,6 +59,7 @@
 		"eslint-plugin-n": "^15.2.0",
 		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-react": "^7.30.0",
+		"husky": "^8.0.1",
 		"prettier": "^2.6.2"
 	}
 }
