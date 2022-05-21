@@ -1,5 +1,4 @@
 import { BrowserRouter, Navigate, NavLink, Route, Routes } from 'react-router-dom';
-import logo from '../logo.svg';
 
 export const Navigation = () => {
 	return (
@@ -7,7 +6,6 @@ export const Navigation = () => {
 			<BrowserRouter>
 				<div className='main-layout'>
 					<nav>
-						<img src={logo} alt='React Logo' />
 						<ul>
 							<li>
 								<NavLink to='/home' className={({ isActive }) => (isActive ? 'nav-active' : '')}>
