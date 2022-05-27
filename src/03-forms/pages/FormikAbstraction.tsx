@@ -26,7 +26,7 @@ export const FormikAbstraction = () => {
 					terms: Yup.boolean().isTrue('You must accept the terms and conditions'),
 					jobType: Yup.string().notOneOf(['it-jr'], 'Is option not permite').required('Required'),
 				})}>
-				{formik => (
+				{form => (
 					<Form>
 						<MyTextInput label='First Name' name='firstName' type='text' placeholder='First Name' />
 						<MyTextInput label='Last Name' name='lastName' type='text' placeholder='Last Name' />

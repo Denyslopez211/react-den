@@ -1,12 +1,5 @@
 import { ErrorMessage, useField } from 'formik';
-
-interface Props {
-	label: string;
-	name: string;
-	type?: 'text' | 'email' | 'password';
-	placeholder?: string;
-	[key: string]: any;
-}
+import { Props } from '../interfaces';
 
 export const MyTextInput = ({ label, ...props }: Props) => {
 	const [field] = useField(props);

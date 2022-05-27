@@ -1,11 +1,5 @@
 import { ErrorMessage, useField } from 'formik';
-
-interface Props {
-	label: string;
-	name: string;
-	placeholder?: string;
-	[key: string]: any;
-}
+import { Props } from '../interfaces';
 
 export const MySelect = ({ label, ...props }: Props) => {
 	const [field] = useField(props);

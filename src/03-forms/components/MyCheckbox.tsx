@@ -1,10 +1,5 @@
 import { ErrorMessage, useField } from 'formik';
-
-interface Props {
-	label: string;
-	name: string;
-	[key: string]: any;
-}
+import { Props } from '../interfaces';
 
 export const MyCheckbox = ({ label, ...props }: Props) => {
 	const [field] = useField({ ...props, type: 'checkbox' });
